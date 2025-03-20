@@ -1,0 +1,42 @@
+.fourth-section {
+    height: 372px;
+
+    &-title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.167;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 94px;
+    }
+    
+    &-icon-list {
+        width: 1170px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 0 auto;
+
+        &-item {
+            width: 170px;
+            height: 92px;
+            fill: $icon-dormant-color;
+            border: 1px solid $icon-dormant-color;
+            border-radius: 4px;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover {
+                fill: $mouse-hover-object-color;
+                border-color: $mouse-hover-object-color;
+            }
+        }
+    }
+    
+    &-icon-svg {
+        width: 106px;
+        height: 60px;
+        margin: 16px 32px;
+    }
+}

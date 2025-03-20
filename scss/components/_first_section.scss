@@ -1,0 +1,32 @@
+.first-section {
+    height: 600px;
+    background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../images/first_section_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-header {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06;
+        margin: 0 auto;
+        padding-top: 200px;
+        margin-bottom: 30px;
+        color: $pure-white;
+    }
+    
+    &-button {
+        display: block;
+        color: $pure-white;
+        font-weight: 700;
+        background-color: $mouse-hover-object-color;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06;
+        text-align: center;
+        padding: 10px 32px;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+}

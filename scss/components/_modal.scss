@@ -1,0 +1,200 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: $pure-white;
+    overflow: hidden;
+}
+
+.close-modal-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $pure-white;
+    color: $pure-black;
+    margin-right: 8px;
+    margin-left: 95%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal-button:hover {
+    color: $mouse-hover-object-color;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.modal-form {
+    width: 448px;
+    height: 386px;
+    margin-left: 40px;
+}
+
+.modal-text {
+    font-size: 12px;
+    line-height: 1.167;
+    font-weight: 400;
+    border-radius: 4px;
+    border-color: $modal-border-color;
+    border-style: inset;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    width: 448px;
+    height: 40px;
+}
+
+.input-group-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 11px 12px;
+}
+
+.input-group-input {
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    width: 400px;
+    height: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.modal-svg {
+    fill: $title-text-color;
+}
+
+.modal-svg-name {
+    width: 12px;
+    height: 12px;
+    margin: 14px 12px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-svg-phone {
+    width: 13px;
+    height: 13px;
+    margin: 13px 12px 14px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-svg-mail {
+    width: 15px;
+    height: 12px;
+    margin: 14px 12px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-text:hover .modal-svg-name {
+    fill: $mouse-hover-object-color;
+}
+.modal-text:hover .modal-svg-phone {
+    fill: $mouse-hover-object-color;
+}
+.modal-text:hover .modal-svg-mail {
+    fill: $mouse-hover-object-color;
+}
+
+.input-group-comment {
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.input-group-input-comment {
+    width: 416px;
+    height: 96px;
+    padding: 0;
+    margin: 12px 16px;
+}
+
+.input-group-input-comment::placeholder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 1.167;
+    font-weight: 400;
+    color: $modal-placeholder-color;
+}
+
+.modal-text-name {
+}
+.modal-input {
+}
+.modal-input-name {
+}
+.modal-text-phone {
+}
+.modal-input-phone {
+}
+.modal-text-mail {
+}
+.modal-input-mail {
+}
+.modal-text-comment {
+}
+.modal-input-comment {
+}
+
+.modal-checkbox-label {
+    width: 425px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 1.714;
+    font-weight: 400;
+    color: $p-text-color;
+    margin-left: 12px;
+}
+
+.modal-checkbox-input {
+    border-width: 2px;
+    border-color: $title-text-color;
+}
+
+.modal-checkbox-link {
+    color: $mouse-hover-object-color;
+    text-decoration: underline;
+}
+
+.modal-button-exit {
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: $mouse-hover-object-color;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    color: $pure-white;
+    border: none;
+    margin: 30px auto 0;
+}
