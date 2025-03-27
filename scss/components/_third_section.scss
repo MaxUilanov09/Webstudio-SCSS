@@ -1,15 +1,14 @@
-.third-section {
+.third__section {
     background: $third-section-bg-color;
 
-    &-title {
+    &__title {
         text-align: center;
-        font-size: 36px;
-        line-height: 1.16;
+        @include font-desc(36px, 1.16, 400);
         padding-top: 94px;
         margin-bottom: 50px;
     }
     
-    &-list {
+    &__list {
         display: flex;
         justify-content: space-between;
         padding-left: 0;
@@ -17,14 +16,12 @@
         margin-bottom: 0px;
     }
     
-    &-header {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.17;
+    &__header {
+        @include font-desc(16px, 1.17, 500);
         color: $title-text-color;
     }
     
-    &-item {
+    &__item {
         text-align: center;
         display: block;
         width: 270px;
@@ -33,7 +30,7 @@
     }
 }
 
-.icon-list {
+.icon__list {
     list-style: none;
     display: flex;
     align-items: center;
@@ -44,12 +41,12 @@
     margin-top: 16px;
 }
 
-.icon-svg {
+.icon__svg {
     width: 20px;
     height: 20px;
 }
 
-.icon-link {
+.icon__link {
     display: inline-block;
     fill: $icon-dormant-color;
     padding: 12px;

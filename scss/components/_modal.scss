@@ -8,12 +8,12 @@
     opacity: 1;
 }
 
-.backdrop.is-hidden {
+.backdrop.is__hidden {
     opacity: 0;
     pointer-events: none;
 }
 
-.modal-window {
+.modal__window {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -26,12 +26,11 @@
     overflow: hidden;
 }
 
-.close-modal-button {
+.close__modal__button {
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    font-size: 18px;
-    line-height: 1;
+    @include font-desc(18px, 1, 400);
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: $pure-white;
     color: $pure-black;
@@ -40,27 +39,23 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-modal-button:hover {
+.close__modal__button:hover {
     color: $mouse-hover-object-color;
 }
 
-.modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+.modal__title {
+    @include font-desc(20px, 1.15, 700);
     text-align: center;
 }
 
-.modal-form {
+.modal__form {
     width: 448px;
     height: 386px;
     margin-left: 40px;
 }
 
-.modal-text {
-    font-size: 12px;
-    line-height: 1.167;
-    font-weight: 400;
+.modal__text {
+    @include font-desc(12px, 1.167, 400);
     border-radius: 4px;
     border-color: $modal-border-color;
     border-style: inset;
@@ -68,19 +63,19 @@
     margin-bottom: 10px;
 }
 
-.input-group {
+.input__group {
     width: 448px;
     height: 40px;
 }
 
-.input-group-icon {
+.input__group__icon {
     display: inline-block;
     width: 18px;
     height: 18px;
     margin: 11px 12px;
 }
 
-.input-group-input {
+.input__group__input {
     display: inline-block;
     padding: 0;
     background-color: transparent;
@@ -91,109 +86,103 @@
     margin-bottom: 12px;
 }
 
-.modal-svg {
+.modal__svg {
     fill: $title-text-color;
 }
 
-.modal-svg-name {
+.modal__svg__name {
     width: 12px;
     height: 12px;
     margin: 14px 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-svg-phone {
+.modal__svg__phone {
     width: 13px;
     height: 13px;
     margin: 13px 12px 14px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-svg-mail {
+.modal__svg__mail {
     width: 15px;
     height: 12px;
     margin: 14px 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text:hover .modal-svg-name {
+.modal__text:hover .modal__svg__name {
     fill: $mouse-hover-object-color;
 }
-.modal-text:hover .modal-svg-phone {
+.modal__text:hover .modal__svg__phone {
     fill: $mouse-hover-object-color;
 }
-.modal-text:hover .modal-svg-mail {
+.modal__text:hover .modal__svg__mail {
     fill: $mouse-hover-object-color;
 }
 
-.input-group-comment {
+.input__group__comment {
     height: 120px;
     margin-bottom: 20px;
 }
 
-.input-group-input-comment {
+.input__group__input__comment {
     width: 416px;
     height: 96px;
     padding: 0;
     margin: 12px 16px;
 }
 
-.input-group-input-comment::placeholder {
+.input__group__input__comment::placeholder {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 12px;
-    line-height: 1.167;
-    font-weight: 400;
+    @include font-desc(12px, 1.167, 400);
     color: $modal-placeholder-color;
 }
 
-.modal-text-name {
+.modal__text__name {
 }
-.modal-input {
+.modal__input {
 }
-.modal-input-name {
+.modal__input__name {
 }
-.modal-text-phone {
+.modal__text__phone {
 }
-.modal-input-phone {
+.modal__input__phone {
 }
-.modal-text-mail {
+.modal__text__mail {
 }
-.modal-input-mail {
+.modal__input__mail {
 }
-.modal-text-comment {
+.modal__text__comment {
 }
-.modal-input-comment {
+.modal__input__comment {
 }
 
-.modal-checkbox-label {
+.modal__checkbox__label {
     width: 425px;
     height: 24px;
-    font-size: 14px;
-    line-height: 1.714;
-    font-weight: 400;
+    @include font-desc(14px, 1.714, 400);
     color: $p-text-color;
     margin-left: 12px;
 }
 
-.modal-checkbox-input {
+.modal__checkbox__input {
     border-width: 2px;
     border-color: $title-text-color;
 }
 
-.modal-checkbox-link {
+.modal__checkbox__link {
     color: $mouse-hover-object-color;
     text-decoration: underline;
 }
 
-.modal-button-exit {
+.modal__button__exit {
     display: block;
     width: 200px;
     height: 50px;
     border-radius: 4px;
     background-color: $mouse-hover-object-color;
-    font-size: 16px;
-    line-height: 1.875;
-    font-weight: 700;
+    @include font-desc(16px, 1.875, 700);
     color: $pure-white;
     border: none;
     margin: 30px auto 0;

@@ -1,16 +1,14 @@
-.fourth-section {
+.fourth__section {
     height: 372px;
 
-    &-title {
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.167;
+    &__title {
+        @include font-desc(36px, 1.167, 700);
         text-align: center;
         padding-bottom: 50px;
         padding-top: 94px;
     }
     
-    &-icon-list {
+    &__icon-list {
         width: 1170px;
         list-style: none;
         display: flex;
@@ -19,7 +17,7 @@
         gap: 30px;
         margin: 0 auto;
 
-        &-item {
+        &__item {
             width: 170px;
             height: 92px;
             fill: $icon-dormant-color;
@@ -34,7 +32,7 @@
         }
     }
     
-    &-icon-svg {
+    &__icon-svg {
         width: 106px;
         height: 60px;
         margin: 16px 32px;

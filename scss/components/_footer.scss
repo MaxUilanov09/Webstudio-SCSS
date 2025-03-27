@@ -1,59 +1,55 @@
 .footer {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+    @include font-desc(14px, 1.714, 400);
     background: $first-section-bg-color;
 
-    &-contact-information {
+    &__contact-information {
         margin-top: 60px;
     }
 
-    &-webstudio {
+    &__webstudio {
         color: $pure-white;
         padding-left: 0;
         margin-bottom: 20px;
     }
 
-    &-list {
+    &__list {
         padding-left: 0;
         list-style: none;
         margin-bottom: 60px;
     }
 
-    &-item {
+    &__item {
         margin-bottom: 9px;
         &:last-child {
             margin-bottom: 0;
         }
     }
 
-    &-wrap {
+    &__wrap {
         display: flex;
     }
 
 }
 
-.white-text {
+.white__text {
     color: $pure-white;
 }
 
-.unpure-white-text {
+.unpure__white__text {
     color: $sixty-percent-white;
 }
 
-.social-contact {
+.social__contact {
     margin-top: 72px;
     margin-left: 70px;
 
-    &-title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
+    &__title {
+        @include font-desc(14px, 1.14, 700);
         color: $pure-white;
         text-transform: uppercase;
     }
     
-    &-list {
+    &__list {
         list-style: none;
         display: flex;
         align-items: center;
@@ -63,12 +59,12 @@
         padding-left: 0;
     }
     
-    &-item {
+    &__item {
         width: 44px;
         height: 44px;
     }
     
-    &-icon-link {
+    &__icon-link {
         display: inline-block;
         height: 44px;
         padding: 12px;
@@ -82,35 +78,31 @@
         }
     }
     
-    &-icon-svg {
+    &__icon-svg {
         width: 20px;
         height: 20px;
     }
 }
 
-.social-mass-send {
+.social__mass__send {
     margin-left: 93px;
     margin-top: 72px;
 
-    &-title {
-        font-size: 14px;
-        line-height: 1.17;
-        font-weight: 700;
+    &__title {
+        @include font-desc(14px, 1.17, 700);
         color: $pure-white;
         text-transform: uppercase;
         margin-bottom: 20px;
     }
     
-    &-form {
+    &__form {
         width: 570px;
         height: 50px;
 
-        &-input {
+        &__input {
             width: 358px;
             height: 50px;
-            font-size: 16px;
-            line-height: 1.25;
-            font-weight: 400;
+            @include font-desc(16px, 1.25, 400);
             color: $sixty-percent-white;
             background-color: $first-section-bg-color;
             border-color: $thirty-percent-white;
@@ -120,13 +112,11 @@
             padding-left: 16px;
         }
         
-        &-button {
+        &__button {
             position: relative;
             width: 200px;
             height: 50px;
-            font-size: 16px;
-            line-height: 1.875;
-            font-weight: 700;
+            @include font-desc(16px, 1.875, 700);
             text-align: center;
             color: $pure-white;
             background-color: $mouse-hover-object-color;
@@ -135,7 +125,7 @@
             border-radius: 4px;
         }
         
-        &-svg {
+        &__svg {
             fill: $pure-white;
             position: absolute;
             top: 13px;
@@ -143,6 +133,5 @@
             width: 24px;
             height: 24px;
         }
-    }
-    
+    } 
 }

@@ -1,0 +1,7 @@
+@mixin font-desc($font-size, $line-height, $font-weight) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+}
+// regex in: font-size: (\d+px);[\n].+line-height: (\d.\d+|\d+);[\n].+font-weight: (\d+);
+// regex out: @include font-desc($1, $2, $3);
