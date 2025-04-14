@@ -1,4 +1,5 @@
-.image-section {
+.image__section {
+    display: none;
     &__header {
         text-align: center;
         @include font-desc(36px, 1.17, 700);
@@ -39,6 +40,102 @@
             width: 370px;
             height: 70px;
             background-color: $image-section-text-bg-color;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .image__section {
+        display: none;
+        &__header {
+            text-align: center;
+            @include font-desc(36px, 1.17, 700);
+            color: $title-text-color;
+            margin-bottom: 50px;
+        }
+        
+        &__list {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding-left: 0;
+            margin-bottom: 94px;
+        }
+        
+        &__item {
+            position: relative;
+            display: block;
+            width: 370px;
+            height: 294px;
+        }
+        
+        &__img {
+            display: block;
+        }
+        
+        &__text {
+            color: $pure-white;
+            @include font-desc(14px, 1.14, 700);
+            text-align: center;
+            margin-top: 27px;
+            text-transform: uppercase;
+        
+            &__wrap {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 370px;
+                height: 70px;
+                background-color: $image-section-text-bg-color;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .image__section {
+        display: block;
+        &__header {
+            text-align: center;
+            @include font-desc(36px, 1.17, 700);
+            color: $title-text-color;
+            margin-bottom: 50px;
+        }
+        
+        &__list {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding-left: 0;
+            margin-bottom: 94px;
+        }
+        
+        &__item {
+            position: relative;
+            display: block;
+            width: 370px;
+            height: 294px;
+        }
+        
+        &__img {
+            display: block;
+        }
+        
+        &__text {
+            color: $pure-white;
+            @include font-desc(14px, 1.14, 700);
+            text-align: center;
+            margin-top: 27px;
+            text-transform: uppercase;
+        
+            &__wrap {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 370px;
+                height: 70px;
+                background-color: $image-section-text-bg-color;
+            }
         }
     }
 }

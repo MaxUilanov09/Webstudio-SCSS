@@ -1,24 +1,25 @@
 .fourth__section {
-    height: 372px;
+    height: 520px;
 
     &__title {
-        @include font-desc(36px, 1.167, 700);
+        @include font-desc(28px, 1.167, 700);
         text-align: center;
-        padding-bottom: 50px;
-        padding-top: 94px;
+        padding-bottom: 30px;
+        padding-top: 60px;
     }
     
-    &__icon-list {
-        width: 1170px;
+    &__icon__list {
+        width: 450px;
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         gap: 30px;
         margin: 0 auto;
 
         &__item {
-            width: 170px;
+            width: 210px;
             height: 92px;
             fill: $icon-dormant-color;
             border: 1px solid $icon-dormant-color;
@@ -32,9 +33,96 @@
         }
     }
     
-    &__icon-svg {
+    &__icon__svg {
         width: 106px;
         height: 60px;
-        margin: 16px 32px;
+        margin: calc((92px - 60px) / 2) calc((100% - 106px) / 2);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .fourth__section {
+        height: 397px;
+    
+        &__title {
+            @include font-desc(36px, 1.167, 700);
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 60px;
+        }
+        
+        &__icon__list {
+            width: 738px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 0 auto;
+    
+            &__item {
+                width: 226px;
+                height: 92px;
+                fill: $icon-dormant-color;
+                border: 1px solid $icon-dormant-color;
+                border-radius: 4px;
+                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+                &:hover {
+                    fill: $mouse-hover-object-color;
+                    border-color: $mouse-hover-object-color;
+                }
+            }
+        }
+        
+        &__icon__svg {
+            width: 106px;
+            height: 60px;
+            margin: calc((92px - 60px) / 2) calc((100% - 106px) / 2);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .fourth__section {
+        height: 372px;
+    
+        &__title {
+            @include font-desc(36px, 1.167, 700);
+            text-align: center;
+            padding-bottom: 50px;
+            padding-top: 94px;
+        }
+        
+        &__icon__list {
+            width: 1170px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin: 0 auto;
+    
+            &__item {
+                width: 170px;
+                height: 92px;
+                fill: $icon-dormant-color;
+                border: 1px solid $icon-dormant-color;
+                border-radius: 4px;
+                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+                &:hover {
+                    fill: $mouse-hover-object-color;
+                    border-color: $mouse-hover-object-color;
+                }
+            }
+        }
+        
+        &__icon__svg {
+            width: 106px;
+            height: 60px;
+            margin: calc((92px - 60px) / 2) calc((100% - 106px) / 2);
+        }
     }
 }

@@ -5,3 +5,7 @@
 }
 // regex in: font-size: (\d+px);[\n].+line-height: (\d.\d+|\d+);[\n].+font-weight: (\d+);
 // regex out: @include font-desc($1, $2, $3);
+
+
+// regex for classes scss: (class1-class2)
+// &(.+)-   &$1__

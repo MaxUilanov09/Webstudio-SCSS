@@ -1,29 +1,60 @@
 .first__section {
-    height: 600px;
-    background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../images/first_section_background.jpg);
+    height: 400px;
+    background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_mobile.png);
     background-repeat: no-repeat;
     background-position: center;
 
     &__header {
-        width: 696px;
-        @include font-desc(44px, 1.36, 400);
+        width: 360px;
+        @include font-desc(26px, 1.615, 900);
         text-align: center;
-        letter-spacing: 0.06;
+        letter-spacing: 0.06rem;
         margin: 0 auto;
-        padding-top: 200px;
+        padding-top: 118px;
         margin-bottom: 30px;
         color: $pure-white;
     }
     
     &__button {
         display: block;
+        width: 200px;
         color: $pure-white;
         background-color: $mouse-hover-object-color;
         @include font-desc(16px, 1.875, 700);
-        letter-spacing: 0.06;
+        letter-spacing: 0.06rem;
         text-align: center;
-        padding: 10px 32px;
+        padding: 10px;
         margin: 0 auto;
         border-radius: 4px;
+        border: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .first__section {
+        height: 400px;
+        background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_tablet.png);
+    
+        &__header {
+            width: 768px;
+            @include font-desc(26px, 1.615, 900);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .first__section {
+        height: 600px;
+        background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_desktop.jpg);
+    
+        &__header {
+            width: 696px;
+            @include font-desc(44px, 1.36, 900);
+            padding-top: 200px;
+        }
+        
+        &__button {
+            width: 216px;
+        }
     }
 }

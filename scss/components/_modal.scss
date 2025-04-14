@@ -46,6 +46,7 @@
 .modal__title {
     @include font-desc(20px, 1.15, 700);
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .modal__form {
@@ -55,29 +56,27 @@
 }
 
 .modal__text {
-    @include font-desc(12px, 1.167, 400);
+    position: relative;
+    display: block;
+    width: 448px;
+    height: 40px;
     border-radius: 4px;
     border-color: $modal-border-color;
     border-style: inset;
     border-width: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
 }
 
-.input__group {
-    width: 448px;
-    height: 40px;
+.modal__text__text {
+    position: absolute;
+    top: -18px;
+    @include font-desc(12px, 1.167, 400);
+    color: $p-text-color;
 }
 
-.input__group__icon {
+.modal__input {
+    position: absolute;
     display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin: 11px 12px;
-}
-
-.input__group__input {
-    display: inline-block;
-    padding: 0;
     background-color: transparent;
     border: none;
     width: 400px;
@@ -86,7 +85,15 @@
     margin-bottom: 12px;
 }
 
+.modal__input:focus {
+    outline: none;
+}
+
 .modal__svg {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 11px 12px;
     fill: $title-text-color;
 }
 
@@ -112,50 +119,33 @@
 .modal__text:hover .modal__svg__name {
     fill: $mouse-hover-object-color;
 }
+
 .modal__text:hover .modal__svg__phone {
     fill: $mouse-hover-object-color;
 }
+
 .modal__text:hover .modal__svg__mail {
     fill: $mouse-hover-object-color;
 }
 
-.input__group__comment {
+.modal__text__comment {
     height: 120px;
     margin-bottom: 20px;
 }
 
-.input__group__input__comment {
+.modal__input__comment {
     width: 416px;
     height: 96px;
     padding: 0;
     margin: 12px 16px;
 }
 
-.input__group__input__comment::placeholder {
+.modal__input__comment::placeholder {
     position: absolute;
     left: 0;
     top: 0;
     @include font-desc(12px, 1.167, 400);
     color: $modal-placeholder-color;
-}
-
-.modal__text__name {
-}
-.modal__input {
-}
-.modal__input__name {
-}
-.modal__text__phone {
-}
-.modal__input__phone {
-}
-.modal__text__mail {
-}
-.modal__input__mail {
-}
-.modal__text__comment {
-}
-.modal__input__comment {
 }
 
 .modal__checkbox__label {
