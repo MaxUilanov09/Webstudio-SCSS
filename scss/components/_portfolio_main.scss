@@ -336,7 +336,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .main {
         @include font-desc(16px, 1.875, 400);
         letter-spacing: 0.03em;

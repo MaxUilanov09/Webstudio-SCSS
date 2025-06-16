@@ -42,7 +42,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .first__section {
         height: 600px;
         background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_desktop.jpg);

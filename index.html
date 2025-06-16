@@ -17,7 +17,7 @@
             <ul class="header__list header__list__one">
                 <li class="header__item"><a class="header__link" href="#">Студія</a></li>
                 <li class="header__item"><a class="header__link" href="./portfolio.html">Портфоліо</a></li>
-                <li class="header__item"><a class="header__link" href="#">Контакти</a></li>
+                <li class="header__item"><a class="header__link" href="#footer">Контакти</a></li>
             </ul>
             <ul class="header__list header__list__two">
                 <li class="header__item">
@@ -27,7 +27,25 @@
                     <a class="plain__text__color" href="#"><svg class="header__icon__svg__phone"><use href="./symbol-defs.svg#icon-phone"></use></svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <button type="button" class="header__mobile__menu__button"></button>
+            <button type="button" class="header__mobile__menu__button" button-menu-open></button>
+        </div>
+        <div class="mobile__menu is-hidden" data-menu>
+            <button type="button" class="mobile__menu__exit__button" button-menu-close>✕</button>
+            <ul class="mobile__menu__list1">
+                <li class="mobile__menu__list1__item"><a href="./index.html" class="mobile__menu__list1__text">Студія</a></li>
+                <li class="mobile__menu__list1__item"><a href="./portfolio.html" class="mobile__menu__list1__text">Портфоліо</a></li>
+                <li class="mobile__menu__list1__item"><a href="#footer" class="mobile__menu__list1__text">Контакти</a></li>
+            </ul>
+            <ul class="mobile__menu__list2">
+                <li class="mobile__menu__list2__item"><a href="#" class="mobile__menu__list2__text__phone">+38 096 111 11 11</a></li>
+                <li class="mobile__menu__list2__item"><a href="#" class="mobile__menu__list2__text__email">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile__menu__list3">
+                <li class="mobile__menu__list3__item"><a href="#" class="mobile__menu__list3__text">Instagram</a></li>
+                <li class="mobile__menu__list3__item"><a href="#" class="mobile__menu__list3__text">Twitter</a></li>
+                <li class="mobile__menu__list3__item"><a href="#" class="mobile__menu__list3__text">Facebook</a></li>
+                <li class="mobile__menu__list3__item"><a href="#" class="mobile__menu__list3__text">LinkedIn</a></li>
+            </ul>
         </div>
     </header>
     <main>
@@ -317,7 +335,7 @@
             </ul>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="container footer__wrap">
             <div class="footer__contact__information">
                 <a href="./index.html"><h3 class="webstudio footer__webstudio"><span class="webstudio__blue">Web</span>Studio</h3></a>

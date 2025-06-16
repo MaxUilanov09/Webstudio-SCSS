@@ -285,7 +285,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .footer {
         @include font-desc(14px, 1.714, 400);
         background: $first-section-bg-color;

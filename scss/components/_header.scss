@@ -175,7 +175,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .header {
         @include font-desc(14px, 1.17, 500);
         margin: 25px 0;
