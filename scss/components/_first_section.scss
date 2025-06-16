@@ -1,6 +1,6 @@
 .first__section {
     height: 400px;
-    background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_mobile.png);
+    background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_mobile@1x.png);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -30,14 +30,38 @@
     }
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .first__section {
+        background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_mobile@2x.png);
+    }
+}
+
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    .first__section {
+        background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_mobile@3x.png);
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
     .first__section {
         height: 400px;
-        background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_tablet.png);
+        background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_tablet@1x.png);
     
         &__header {
             width: 768px;
             @include font-desc(26px, 1.615, 900);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .first__section {
+            background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_tablet@2x.png);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+        .first__section {
+            background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_tablet@3x.png);
         }
     }
 }
@@ -45,7 +69,7 @@
 @media screen and (min-width: 1200px) {
     .first__section {
         height: 600px;
-        background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_desktop.jpg);
+        background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_desktop@1x.jpg);
     
         &__header {
             width: 696px;
@@ -55,6 +79,18 @@
         
         &__button {
             width: 216px;
+        }
+    }
+    
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .first__section {
+            background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_desktop@2x.png);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+        .first__section {
+            background-image: linear-gradient($first-section-gradient-color, $first-section-gradient-color), url(../../images/first_sect_bg_desktop@3x.png);
         }
     }
 }
